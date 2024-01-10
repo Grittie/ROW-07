@@ -58,27 +58,12 @@ void on_connect(struct mosquitto *mosq, void *obj, int rc) {
         std::cout << "Error with result code: " << rc << std::endl;
         exit(-1);
     }
-    mosquitto_subscribe(mosq, nullptr, "joystick values", 0);
+    mosquitto_subscribe(mosq, nullptr, "direction", 0);
 }
-
-// double Sub::return_x() {
-//     std::cout << "x: " << xyInput[0] << " ";
-//     return xyInput[0];
-// }
-
-// double Sub::return_y() {
-//     std::cout << "y: " << xyInput[1] << "\n";
-//     return xyInput[1];
-// }
 
 char Sub::return_message() {
     return returnMessage;
 }
-
-// bool Sub::message_received() {
-//     returnMessage = false;
-//     return returnMessage;
-// }
 
 void on_message(struct mosquitto *mosq, void *obj, const struct mosquitto_message *msg) {
     std::string receivedMessage = static_cast<char *>(msg->payload);
@@ -86,20 +71,6 @@ void on_message(struct mosquitto *mosq, void *obj, const struct mosquitto_messag
 
     returnMessage = receivedMessage[0];
 
-    // char seperator = ' ';
-    // std::lock_guard<std::mutex> lock(mtx);  // Lock to protect shared data
-    // split(receivedMessage, seperator);
-    
-    // // Process and update xyInput
-    // for (int i = 0; i < max; i++) {
-    //     std::string val = strings[i];
-    //     std::replace(val.begin(), val.end(), ',', '.');
-    //     std::stringstream s(val);
-    //     s >> xyInput[i];
-    // }
-    // returnMessage = true;
-    
-    // std::cout << "final x: " << xyInput[0] << " y: " << xyInput[1] << std::endl;
 }
 
 int Sub::main() {
@@ -109,7 +80,7 @@ int Sub::main() {
     mosq = mosquitto_new("subscribe-test", true, &id);
     mosquitto_connect_callback_set(mosq, on_connect);
     mosquitto_message_callback_set(mosq, on_message);
-    rc = mosquitto_connect(mosq, "192.168.94.203", 1883, 10);
+    rc = mosquitto_connect(mosq, "192.168.25.203", 1883, 10);
     if (rc) {
         std::cout << "Could not connect to Broker with return code " << rc << std::endl;
         return -1;

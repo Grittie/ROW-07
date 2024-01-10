@@ -1,18 +1,19 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
   )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/row07/row-07/src/main.cpp" "/home/row07/row-07/build/CMakeFiles/main.dir/src/main.cpp.o"
+  "/home/row07/row-07/src/motorController/wheels.cpp" "/home/row07/row-07/build/CMakeFiles/main.dir/src/motorController/wheels.cpp.o"
+  "/home/row07/row-07/src/mqtt/sub.cpp" "/home/row07/row-07/build/CMakeFiles/main.dir/src/mqtt/sub.cpp.o"
+  "/home/row07/row-07/src/servo/servo.cpp" "/home/row07/row-07/build/CMakeFiles/main.dir/src/servo/servo.cpp.o"
+  "/home/row07/row-07/src/waterpump/waterpump.cpp" "/home/row07/row-07/build/CMakeFiles/main.dir/src/waterpump/waterpump.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/row07/row-07/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
-  "/home/row07/row-07/src/motorController/wheels.cpp" "CMakeFiles/main.dir/src/motorController/wheels.cpp.o" "gcc" "CMakeFiles/main.dir/src/motorController/wheels.cpp.o.d"
-  "/home/row07/row-07/src/mqtt/sub.cpp" "CMakeFiles/main.dir/src/mqtt/sub.cpp.o" "gcc" "CMakeFiles/main.dir/src/mqtt/sub.cpp.o.d"
-  "/home/row07/row-07/src/servo/servo.cpp" "CMakeFiles/main.dir/src/servo/servo.cpp.o" "gcc" "CMakeFiles/main.dir/src/servo/servo.cpp.o.d"
-  "/home/row07/row-07/src/waterpump/waterpump.cpp" "CMakeFiles/main.dir/src/waterpump/waterpump.cpp.o" "gcc" "CMakeFiles/main.dir/src/waterpump/waterpump.cpp.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # Targets to which this target links.

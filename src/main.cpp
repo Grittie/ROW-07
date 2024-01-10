@@ -49,13 +49,6 @@ int main() {
 
     pthread_create(&listenerThread, nullptr, Listener, nullptr);
 
-    // x/y range: -1 - 1
-
-    // wheels.stop();
-
-    // double x = 0;
-    // double y = 0;
-
     while (true) { 
         char message = sub.return_message();
         switch (message)
@@ -85,6 +78,13 @@ int main() {
                 wheels.stop();
                 break;
             }
+            case 'p':
+            {
+                wheels.stop();
+                sleep(1);
+
+                break;
+            }
             default:
             {
                 wheels.stop();
@@ -93,54 +93,8 @@ int main() {
         }
     }
 
+    wheels.stop();
+
     pthread_exit(NULL);
 
 }
-
-    //     if(x == 0 && y == 0) {
-    //         wheels.stop();
-    //     }else if(y >= -0.2 && y <= 0.2 && x < 0) {
-    //         cout << "Left\n";
-    //         wheels.left(x, y);
-    //     }else if(y >= -0.2 && y <= 0.2 && x > 0) {
-    //         cout << "Right\n";
-    //         wheels.right(x, y);
-    //     }else if(y > 0.2) {
-    //         if (x >= -0.2 && x <= 0.2) {
-    //             cout << "forward\n";
-    //             wheels.forward(x, y);
-    //         }else if (x <= -0.1 && x >= -0.5) {
-    //             cout << "Slight left\n";
-    //             wheels.forwardLeft(x, y);
-    //         }else if (x <= -0.6 && x >= -1.0) {
-    //             cout << "left, slightly forward\n";
-    //             wheels.leftUp(x, y);
-    //         }else if (x >= 0.1 && x <= 0.5) {
-    //             cout << "Slight right\n";
-    //             wheels.forwardRight(x, y);
-    //         }else if (x >= 0.6 && x <= 1.0) {
-    //             cout << "right, slightly forward\n";
-    //                 wheels.rightUp(x, y);
-    //         }
-    //     }else if(y < -0.2) {
-    //         if (x >= -0.2 && x <= 0.2) {
-    //             cout << "backward";
-    //             wheels.backward(x, y);
-    //         }else if (x <= -0.1 && x >= -0.5) {
-    //             cout << "Slight backLeft\n";
-    //             wheels.backwardLeft(x, y);
-    //         }else if (x <= -0.6 && x >= -1.0) {
-    //             cout << "left, slightly down\n";
-    //             wheels.leftDown(x, y);
-    //         }else if (x >= 0.1 && x <= 0.5) {
-    //             cout << "Slight backRight\n";
-    //             wheels.backwardRight(x, y);
-    //         }else if (x >= 0.6 && x <= 1.0) {
-    //             cout << "right, slightly down\n";
-    //             wheels.rightDown(x, y);
-    //         }
-    //     }else {
-    //         cout << "no valid input\n";
-    //         wheels.stop();
-    //     }
-    // }
