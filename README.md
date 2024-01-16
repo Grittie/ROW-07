@@ -36,13 +36,14 @@ Insert gif or link to demo
 ## Installation
 
 For pi:
+```bash
 cd pi
 mkdir build
 cd build
 cmake ..
 cmake --build .
 ./main
-
+```
 ## Tech Stack
 
 PYTHON
