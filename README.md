@@ -35,10 +35,16 @@ Insert gif or link to demo
 
 ## Installation
 
-COMING SOON 
-
+For pi:
+cd pi
+mkdir build
+cd build
+cmake ..
+cmake --build .
+./main
 
 ## Tech Stack
 
-COMING SOON
-
+PYTHON
+C++
+JAVA
