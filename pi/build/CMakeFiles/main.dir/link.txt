@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/main.dir/src/main.cpp.o CMakeFiles/main.dir/src/waterpump/waterpump.cpp.o CMakeFiles/main.dir/src/cupDispenser/cupDispenser.cpp.o CMakeFiles/main.dir/src/servo/servo.cpp.o CMakeFiles/main.dir/src/wheelEncoder/wheels.cpp.o CMakeFiles/main.dir/src/mqtt/sub.cpp.o -o main  -lwiringPi -lmosquitto -lpthread 

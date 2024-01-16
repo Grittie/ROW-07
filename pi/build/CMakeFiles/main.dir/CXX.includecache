@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/row07/row-07/src/cupDispenser/cupDispenser.h
+
+/home/row07/row-07/src/main.cpp
+waterpump/waterpump.h
+/home/row07/row-07/src/waterpump/waterpump.h
+cupDispenser/cupDispenser.h
+/home/row07/row-07/src/cupDispenser/cupDispenser.h
+servo/servo.h
+/home/row07/row-07/src/servo/servo.h
+wheelEncoder/wheels.h
+/home/row07/row-07/src/wheelEncoder/wheels.h
+mqtt/sub.h
+/home/row07/row-07/src/mqtt/sub.h
+unistd.h
+-
+string
+-
+iostream
+-
+pthread.h
+-
+thread
+-
+future
+-
+csignal
+-
+
+/home/row07/row-07/src/mqtt/sub.h
+array
+-
+
+/home/row07/row-07/src/servo/servo.h
+
+/home/row07/row-07/src/waterpump/waterpump.h
+
+/home/row07/row-07/src/wheelEncoder/wheels.h
+
