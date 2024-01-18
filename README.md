@@ -24,7 +24,7 @@ Insert gif or link to demo
 
 ## Documentation
 
-[Documentation](/docs/)
+[Documentation](/docs/index.md)
 
 
 ## Features
