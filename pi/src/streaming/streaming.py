@@ -55,7 +55,7 @@ def video_stream():
 @app.route('/camera')
 def camera():
     print("showing camera feed")
-    return render_template('camera.html')
+    return render_template('templates/camera.html')
 
 @app.route('/')
 def home():
