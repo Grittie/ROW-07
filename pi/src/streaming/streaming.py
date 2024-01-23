@@ -31,8 +31,8 @@ def color_detection(frame):
     # Draw a blue rectangle and label "Cup" around each detected turquoise object
     for contour in filtered_contours:
         x, y, w, h = cv2.boundingRect(contour)
-        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)  # Change color to blue (255, 0, 0)
-        cv2.putText(frame, "Cup", (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2, cv2.LINE_AA)  # Change color to blue (255, 0, 0)
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+        cv2.putText(frame, "Cup", (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2, cv2.LINE_AA)
 
     return frame
 
