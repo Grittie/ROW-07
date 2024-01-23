@@ -3,6 +3,9 @@
 ## Apps
 
 1. [Video feed](./app/video_feed.md)
+2. [splash screen](./app/splashScreen.md)
+3. [main screen](./app/mainScreen.md)
+4. [info screen](./app/infoScreen.md)
 
 ## Pi (Raspberry Pi)
 
