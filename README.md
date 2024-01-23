@@ -1,4 +1,3 @@
-
 # Row 07
 
 This is the git repository for the Robot on Wheels project for group 07.
