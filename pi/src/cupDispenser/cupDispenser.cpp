@@ -8,8 +8,6 @@ void CupDispenser::dispense(int dispenserPin, int time) {
     if (piSetup2 == false) {
         wiringPiSetup();
         piSetup2 = true;
-        // std::cerr << "WiringPi initialization failed. Exiting program." << std::endl;
-        // return 1;
     }
     printStart();
     digitalWrite(dispenserPin, HIGH);
