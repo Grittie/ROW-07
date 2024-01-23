@@ -25,7 +25,37 @@ Beverage bot is a drink dispensing and cup disposal robot. The beverage bot can 
 
 ## Documentation
 
-[Documentation](/docs/index.md)
+### Pi Configuration
+
+**Operating System (OS) Version:**
+- Raspberry Pi OS Lite 32-bit (Debian Bookworm)
+
+**System Information:**
+- Raspberry Pi 4 Model
+
+**Network Configuration:**
+   - Connected to a hotspot; the app requiring communication should be on the same network.
+
+**Peripheral Devices:**
+   - Raspberry Pi Camera Module connected.
+
+**Filesystem and Storage:**
+   - 32GB SD card.
+   - Filesystem: ext4
+
+**User Accounts:**
+   - Default User: pi
+   - Additional Users: raspberry
+
+**SSH Configuration:**
+   - Default SSH port: 22 (or specify if you've changed it)
+
+**Additional Notes:**
+    - It is recommended to set up a static IP address for the Raspberry Pi for consistent network communication. Instructions for setting up a static IP can be found [here](https://www.tomshardware.com/how-to/static-ip-raspberry-pi).
+
+
+## Additional software documentation
+Further documentation can be found below in the documentation index: [Documentation](/docs/index.md)
 
 
 ## Features
