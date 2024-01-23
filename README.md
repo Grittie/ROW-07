@@ -11,8 +11,8 @@ Beverage bot is a drink dispensing and cup disposal robot. The beverage bot can 
 
 ## Authors
 
-- [Lars Grit](https://gitlab.fdmci.hva.nl/gritla) - Scrum master
-- [Ayham Nahar](https://gitlab.fdmci.hva.nl/nahara) - Project owner
+- [Lars Grit](https://gitlab.fdmci.hva.nl/gritla)
+- [Ayham Nahar](https://gitlab.fdmci.hva.nl/nahara)
 - [Luc Enderman](https://gitlab.fdmci.hva.nl/enderml)
 - [Silvester Rademaker](https://gitlab.fdmci.hva.nl/rademas1)
 
@@ -31,7 +31,10 @@ Beverage bot is a drink dispensing and cup disposal robot. The beverage bot can 
 ## Features
 
 - Beverage dispensing
-- Cup cleanup
+- Cup dispensing
+- App remote control
+- Video feed 
+- Computer vision cup detection
 
 
 ## Installation
