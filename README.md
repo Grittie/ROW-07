@@ -49,7 +49,8 @@ cmake --build .
 ./main
 ```
 ## Tech Stack
-
-PYTHON
-C++
-JAVA
+- Python
+    - OpenCV
+    - Flask
+- C++
+- Java (for app)
