@@ -19,7 +19,7 @@ Beverage bot is a drink dispensing and cup disposal robot. The beverage bot can 
 
 ## Demo
 
-![Animated GIF](docs/app/extrude.gif)
+![Animated GIF](docs/img/extrude.gif)
 
 
 
